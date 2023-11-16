@@ -1,5 +1,5 @@
-/* eslint-disable @next/next/no-img-element */
 import { ImageResponse } from "next/og";
+import Image from 'next/image'
 
 export const runtime = "edge";
 export const alt = "HackType - A tool that will help you identify the type of attacks, their risks and how to prevent them!";
@@ -25,10 +25,12 @@ export default async function OG() {
             "linear-gradient(to bottom right, #E0E7FF 25%, #ffffff 50%, #CFFAFE 75%)",
         }}
       >
-        <img
+        <Image
           src={`https://hacktype.za16.co/logo.png`}
           alt="Logo"
           tw="w-100 h-100 mb-4 opacity-95"
+          width={100}
+          height={100}
         />
         <h1
           style={{
