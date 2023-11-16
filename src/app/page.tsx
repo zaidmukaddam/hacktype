@@ -61,7 +61,7 @@ export default function Home() {
   };
 
   const handleFileUpload = async (selectedFile: File) => {
-    setIsLoading(true);
+    // setIsLoading(true);
     setFile(selectedFile);
     setImageSrc(""); // Clear any existing image on the UI.
 
@@ -71,7 +71,7 @@ export default function Home() {
     } catch (error) {
       console.error('Error during file conversion:', error);
     } finally {
-      setIsLoading(false);
+      // setIsLoading(false);
     }
   };
 
@@ -184,7 +184,7 @@ export default function Home() {
 
           <button
             onClick={handleDetect}
-            className={`mt-4 w-full bg-indigo-600 text-white p-2 rounded-lg font-semibold transition-colors flex justify-center items-center ${isLoading ? 'bg-indigo-300 cursor-not-allowed' : 'hover:bg-indigo-700'}`}
+            className={`mt-4 w-full bg-indigo-600 text-white p-2 rounded-lg font-semibold transition-colors flex justify-center items-center ${isLoading ? 'bg-blue-300 cursor-not-allowed' : 'hover:bg-indigo-700'}`}
             disabled={isLoading}
           >
             {isLoading ? (
