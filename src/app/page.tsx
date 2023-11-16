@@ -162,6 +162,7 @@ export default function Home() {
             onDragOver={handleDragOver}
             onDragLeave={handleDragLeave}
             onDrop={handleDrop}
+            onClick={() => document.getElementById('file')?.click()}
           >
             <input
               type="file"
@@ -181,6 +182,8 @@ export default function Home() {
               <p className="text-xs text-center">PNG, JPG, GIF up to 10MB</p>
             </label>
           </div>
+
+
 
           <button
             onClick={handleDetect}
