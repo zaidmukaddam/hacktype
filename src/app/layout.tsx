@@ -44,6 +44,7 @@ export default function RootLayout({
         <div className="bg-gray-100">
           {children}
         </div>
+        <script async src="https://cdn.splitbee.io/sb.js" />
       </body>
     </html>
   )
