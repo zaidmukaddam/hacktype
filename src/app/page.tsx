@@ -185,7 +185,7 @@ export default function Home() {
           <button
             onClick={handleDetect}
             className={`mt-4 w-full p-2 rounded-lg font-semibold flex justify-center items-center transition-colors 
-            ${isLoading ? 'bg-blue-300 cursor-not-allowed' : 'bg-indigo-600 hover:bg-indigo-700 text-white'}`}
+            ${isLoading ? 'bg-indigo-300 cursor-not-allowed' : 'bg-indigo-600 hover:bg-indigo-700 text-white'}`}
             disabled={isLoading}
           >
             {isLoading ? (
