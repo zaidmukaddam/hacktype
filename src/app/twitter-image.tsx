@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
@@ -25,7 +24,7 @@ export default async function OG() {
             "linear-gradient(to bottom right, #E0E7FF 25%, #ffffff 50%, #CFFAFE 75%)",
         }}
       >
-        <Image
+        <img
           src={`http://localhost:3000/logo.png`}
           alt="Logo"
           tw="w-100 h-100 mb-4 opacity-95"
