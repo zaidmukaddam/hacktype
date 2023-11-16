@@ -28,8 +28,7 @@ export async function POST(request: Request) {
 3. Mitigation Tips
 - General Practices: Provide general security practices like regular updates and patches, employee training, etc.
 - Technical Measures: Detail technical measures such as firewalls, intrusion detection systems, and anti-malware software.
-- Response Strategies: Outline incident response strategies in case an attack occurs, including backup and restore procedures
-.`,
+- Response Strategies: Outline incident response strategies in case an attack occurs, including backup and restore procedures.`,
       },
       {
         role: "user",
